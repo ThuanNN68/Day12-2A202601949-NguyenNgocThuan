@@ -14,7 +14,7 @@
 
 | Mục         | Nội dung                                                    |
 | ------------ | ------------------------------------------------------------ |
-| Public URL   | https://TODO-thay-bang-url-render-cua-ban.onrender.com       |
+| Public URL   | https://day12-agent-0nib.onrender.com                        |
 | Platform     | Render                                                       |
 | Ngày deploy | 2026-08-10                                                   |
 
@@ -91,5 +91,5 @@ Không đăng ký được tài khoản cloud? Vẫn nộp được bài, nhưng
 5. Ghi rõ lý do không deploy được vào phần dưới đây:
 
 ```
-Đã deploy thành công lên Railway.
+Đã deploy thành công lên Render.
 ```
