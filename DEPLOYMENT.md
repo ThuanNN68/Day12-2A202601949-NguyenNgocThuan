@@ -1,39 +1,33 @@
 # Thông Tin Deploy — Checkpoint 5
 
-> Điền file này sau khi deploy xong. `pytest tests/test_cp5.py` đọc file này
-> để tìm địa chỉ service của bạn và gọi thử.
->
-> **Chỉ ghi TÊN biến môi trường, tuyệt đối không dán giá trị API key vào đây.**
-> Repo này công khai — dán khóa vào là mất khóa.
+> Điền file này sau khi deploy xong. Không ghi giá trị API key vào repository.
 
 ## Thông Tin Học Viên
 
-| Mục | Nội dung |
-|-----|----------|
-| Họ và tên | (điền họ tên) |
-| Mã học viên | (điền mã học viên) |
-| Repo | (điền link repo DAY12-...) |
+| Mục           | Nội dung                         |
+| -------------- | --------------------------------- |
+| Họ và tên   | Nguyen Ngoc Thuan                 |
+| Mã học viên | 2A202601949                       |
+| Repo           | DAY12-2A202601949-NguyenNgocThuan |
 
 ## Service
 
-| Mục | Nội dung |
-|-----|----------|
-| Public URL | https://TODO-thay-bang-url-that.up.railway.app |
-| Platform | Railway / Render / Cloud Run — (điền platform bạn dùng) |
-| Ngày deploy | (điền ngày) |
+| Mục         | Nội dung                                                    |
+| ------------ | ------------------------------------------------------------ |
+| Public URL   | https://TODO-thay-bang-url-that.up.railway.app               |
+| Platform     | Railway / Render / Cloud Run — (điền platform bạn dùng) |
+| Ngày deploy | (điền ngày)                                               |
 
 ## Biến Môi Trường Đã Set Trên Cloud
 
-Ghi tên biến và **nguồn giá trị**, không ghi giá trị:
-
-| Biến | Đã set | Ghi chú |
-|------|--------|---------|
-| `PORT` | ✅ | platform tự gán |
-| `AGENT_API_KEY` | ✅ | đặt trong dashboard, không nằm trong repo |
-| `REDIS_URL` | ✅ | (điền: Redis add-on của platform / Upstash / ...) |
-| `RATE_LIMIT_PER_MINUTE` | ✅ | 10 |
-| `MONTHLY_BUDGET_USD` | ✅ | 10.0 |
-| `LOG_LEVEL` | ✅ | INFO |
+| Biến                     | Đã set | Ghi chú                                      |
+| ------------------------- | -------- | --------------------------------------------- |
+| `PORT`                  | ✅       | platform tự gán                             |
+| `AGENT_API_KEY`         | ✅       | đặt trong dashboard, không nằm trong repo |
+| `REDIS_URL`             | ✅       | Redis add-on của platform                    |
+| `RATE_LIMIT_PER_MINUTE` | ✅       | 10                                            |
+| `MONTHLY_BUDGET_USD`    | ✅       | 10.0                                          |
+| `LOG_LEVEL`             | ✅       | INFO                                          |
 
 ## Lệnh Kiểm Tra
 

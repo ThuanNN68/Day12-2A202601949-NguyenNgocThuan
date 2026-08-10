@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from functools import lru_cache
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -40,10 +41,25 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    # TODO (CP1): khai báo 6 trường theo bảng trên, ví dụ:
-    #     port: int = 8000
-    #     agent_api_key: str
+    port: int = 8000
+    agent_api_key: str
+    redis_url: str = "redis://localhost:6379/0"
+    rate_limit_per_minute: int = 10
+    monthly_budget_usd: float = 10.0
+    log_level: str = "INFO"
 
+    @field_validator("agent_api_key")
+    @classmethod
+    def api_key_must_be_real(cls, value: str) -> str:
+        """Reject empty and documented placeholder keys at startup."""
+        normalized = value.strip()
+        placeholders = {
+            "changeme", "change-me", "your-api-key", "your_api_key",
+            "doi-thanh-khoa-cua-rieng-ban",
+        }
+        if not normalized or normalized.lower() in placeholders:
+            raise ValueError("AGENT_API_KEY must be a non-placeholder secret")
+        return normalized
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
