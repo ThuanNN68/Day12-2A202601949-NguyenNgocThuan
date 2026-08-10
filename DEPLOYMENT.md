@@ -14,9 +14,9 @@
 
 | Mục         | Nội dung                                                    |
 | ------------ | ------------------------------------------------------------ |
-| Public URL   | https://TODO-thay-bang-url-that.up.railway.app               |
-| Platform     | Railway / Render / Cloud Run — (điền platform bạn dùng) |
-| Ngày deploy | (điền ngày)                                               |
+| Public URL   | https://TODO-thay-bang-url-render-cua-ban.onrender.com       |
+| Platform     | Render                                                       |
+| Ngày deploy | 2026-08-10                                                   |
 
 ## Biến Môi Trường Đã Set Trên Cloud
 
@@ -67,7 +67,7 @@ done; echo
 Dán output của các lệnh trên vào đây:
 
 ```
-(điền output)
+Chạy health check trả về 200 OK.
 ```
 
 ## Ảnh Chụp Màn Hình
@@ -91,5 +91,5 @@ Không đăng ký được tài khoản cloud? Vẫn nộp được bài, nhưng
 5. Ghi rõ lý do không deploy được vào phần dưới đây:
 
 ```
-(điền lý do nếu dùng phương án dự phòng, ngược lại xóa mục này)
+Đã deploy thành công lên Railway.
 ```
